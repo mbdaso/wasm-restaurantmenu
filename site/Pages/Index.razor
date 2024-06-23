@@ -1,0 +1,25 @@
+﻿@page "/"
+@inject HttpClient Http;
+@using site.Components;
+
+<Home/>
+<Menu/>
+<Contact/>
+
+
+@code {
+    private List<MenuItem> menuItems = new List<MenuItem>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // menuItems = await Http.GetFromJsonAsync<List<MenuItem>>("menu.json");
+        await Task.CompletedTask;
+    }
+
+    public class MenuItem
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Price { get; set; }
+    }
+}
