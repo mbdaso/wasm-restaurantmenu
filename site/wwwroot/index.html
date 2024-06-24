@@ -8,12 +8,17 @@
     <link href="css/app.css?v=1" rel="stylesheet" />
 
     <!-- If you add any scoped CSS files, uncomment the following to load them-->
-    <link href="site.styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css" />
+    <link href="site.styles.css" rel="stylesheet" />
+
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <article aria-busy="true" data-theme="dark" style="margin: auto"></article>
+    </div>
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>

@@ -1,0 +1,32 @@
+﻿@page "/menu"
+@inject HttpClient Http
+
+<h3>Menu</h3>
+
+@foreach (var category in menu?.Categories ?? Enumerable.Empty<Category>())
+{
+    <h4>@category.Name</h4>
+    <ul>
+        @foreach (var item in category.Items)
+        {
+            <li>
+                <strong>@item.Name</strong>: @item.Description
+                <ul>
+                    @foreach (var price in item.Prices)
+                    {
+                        <li>@price.Key: $@price.Value</li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+}
+@code {
+    private Menu? menu = new Menu();
+
+    protected override async Task OnInitializedAsync()
+    {
+        menu = await Http.GetFromJsonAsync<Menu>("menu.json");
+    }
+
+}
