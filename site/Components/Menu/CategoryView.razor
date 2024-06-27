@@ -1,0 +1,24 @@
+﻿<div class="list">
+    <header>
+        @foreach (var priceCategory in this.Category.PriceCategories)
+        {
+            <h4>@priceCategory</h4>
+        }
+    </header>
+    <ul>
+        @foreach (var item in this.Category.Items)
+        {
+            <li class="item">
+                <strong>@item.Name</strong>: @item.Description
+                @foreach (var price in item.Prices)
+                {
+                    <span class="price">@price.Key: @(price.Value)€</span>
+                }
+            </li>
+        }
+    </ul>
+</div>
+
+@code {
+    [Parameter] public Category Category { get; set; } = new();
+}

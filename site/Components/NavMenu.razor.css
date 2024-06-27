@@ -1,19 +1,31 @@
-nav {
-    background: var(--pico-color-pumpkin-850);
-    align-items: center;
-    padding: 0px 20px;
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background: rgb(245,181,68);
+    background: linear-gradient(270deg, rgba(245,181,68,1) 0%, rgba(255,124,0,1) 42%, rgba(201,98,0,1) 100%);
+    color: white;    
 }
-li{
-    color: white;
+.navbar i {
+    margin-right: 1rem;
+    font-size: 48px;
 }
 
 h1{
-    margin: 0;
     padding: 0;
-    color:inherit;
+    margin: 0;
+    color: inherit;
 }
 
+ul{
+    border: 1px solid white;
+    color: inherit;
+    display: flex;
+    gap: 1rem;
+}
+li{
+    padding: 0;
+}
 a{
-    text-decoration: none;
     color: inherit;
 }

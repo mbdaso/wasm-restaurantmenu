@@ -2,17 +2,21 @@
     --c-background: var(--pico-color-pumpkin-50);
     --c-text: var(--pico-color-pumpkin-850);
     --c-appbar-bg: var(--pico-color-pumpkin-850);
+    --body-bg: var(--pico-color-pumpkin-50);
 }
 
 :focus {
     outline: none;
 }
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    background: var(--body-bg);
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
 }
 
 #blazor-error-ui {
