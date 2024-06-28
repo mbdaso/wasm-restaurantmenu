@@ -13,8 +13,9 @@
     background: var(--pico-color-pumpkin-350);
     padding: 1rem;
     box-sizing: border-box;
-    border-radius: 1%;
+    border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: var(--pico-color-pumpkin-50)
 }
 
     .category header {
@@ -22,5 +23,31 @@
         font-weight: 700;
         margin-bottom: 1rem;
         font-family: 'Dancing Script';
-        color: #ededed;
+        color: ghostwhite;
+        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+        
+    }
+
+    header{
+        font-family: 'Dancing Script';
+        font-size: 4.5rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1, h2, h3, h4{
+/*        font-size: inherit;
+*/        font-family: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .pricecategories{
+        color: var(--pico-color-pumpkin-100);
+        display: flex;
+        gap: 1rem; 
+        justify-content: flex-end;
     }

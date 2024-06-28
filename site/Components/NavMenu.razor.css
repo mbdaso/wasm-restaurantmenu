@@ -1,10 +1,12 @@
 .navbar {
     display: flex;
-    align-items: flex-end;
-    padding: 1rem;
+    align-items: baseline;
+    padding: 1rem 3rem;
     background: rgb(245,181,68);
     background: linear-gradient(270deg, rgba(245,181,68,1) 0%, rgba(255,124,0,1) 42%, rgba(201,98,0,1) 100%);
-    color: white;    
+    color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 2rem;    
 }
 .navbar i {
     margin-right: 1rem;
@@ -17,8 +19,7 @@ h1{
     color: inherit;
 }
 
-ul{
-    border: 1px solid white;
+ul{ 
     color: inherit;
     display: flex;
     gap: 1rem;

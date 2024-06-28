@@ -7,9 +7,17 @@
     {
         <div class="category">
             <header>
-            @category.Name
+
+                <h1>@category.Name</h1>
+                <span class="pricecategories">
+                    @foreach (var priceCategory in category.PriceCategories)
+                    {
+                        <h2>@priceCategory</h2>
+                    }
+                </span>
             </header>
-            <CategoryView Category=@category/>
+
+            <CategoryView Category=@category />
         </div>
     }
 </div>
