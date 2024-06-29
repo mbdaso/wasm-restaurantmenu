@@ -1,5 +1,5 @@
-/* wasm-restaurantmenu/Components/Contact.razor.rz.scp.css */
-/* wasm-restaurantmenu/Components/Footer.razor.rz.scp.css */
+/* /Components/Contact.razor.rz.scp.css */
+/* /Components/Footer.razor.rz.scp.css */
 
 footer[b-dic3wf7lzy]{
     margin-top: 15rem;
@@ -25,7 +25,7 @@ svg[b-dic3wf7lzy] {
     border-radius: 8px;
     color: black;
 }
-/* wasm-restaurantmenu/Components/Menu/CategoryView.razor.rz.scp.css */
+/* /Components/Menu/CategoryView.razor.rz.scp.css */
 ul[b-rpj53h0lfg]{
     color: inherit;
     font-size: 0.8rem;
@@ -43,7 +43,7 @@ li[b-rpj53h0lfg]{
     justify-content: flex-end;
     border-bottom: 2px dashed var(--pico-color-pumpkin-250);
 }
-/* wasm-restaurantmenu/Components/Menu/MenuView.razor.rz.scp.css */
+/* /Components/Menu/MenuView.razor.rz.scp.css */
 .main[b-n74f78crkj]{
     margin-top: 8rem;
 }
@@ -106,7 +106,7 @@ li[b-rpj53h0lfg]{
         font-size: 1.5rem;
         margin: 1rem;
     }
-/* wasm-restaurantmenu/Components/NavMenu.razor.rz.scp.css */
+/* /Components/NavMenu.razor.rz.scp.css */
 .navbar[b-86qr0pun0t] {
     display: flex;
     align-items: center;
