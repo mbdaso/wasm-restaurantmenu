@@ -1,3 +1,5 @@
+# tutorial (you need to check and update action versions): https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages
+
 name: Deploy to github pages
 # Run workflow on every push to the master branch
 on:
@@ -20,9 +22,12 @@ jobs:
       # publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
         run: dotnet publish site/site.csproj -c Release -o release --nologo
-      # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
-      - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-        run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorGitHubPagesDemo\/" \/>/g' release/wwwroot/index.html
+      - name: Get repository name
+        id: repo-name
+        uses: MariachiBear/get-repo-name-action@v1.1.0
+      # changes the base-tag in index.html to match GitHub Pages repository subdirectory
+      - name: Change base-tag in index.html to match repository name
+        run: sed -i 's/<base href="\/" \/>/<base href="\/${{ steps.repo-name.outputs.repository-name }}\/" \/>/g' release/wwwroot/index.html
         # copy index.html to 404.html to serve the same file when a file is not found
       - name: copy index.html to 404.html
         run: cp release/wwwroot/index.html release/wwwroot/404.html
