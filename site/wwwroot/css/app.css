@@ -1,3 +1,5 @@
+@import('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
 :root {
     --c-background: var(--pico-color-pumpkin-50);
     --c-text: var(--pico-color-pumpkin-850);

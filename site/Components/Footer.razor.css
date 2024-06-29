@@ -1,69 +1,25 @@
-.footer {
+
+footer{
+    margin-top: 15rem;
+}
+.social-links {
     background: var(--pico-color-pumpkin-150);
     min-height: 4rem;
     margin: 0;
-}
-
-.social-links{
     display: flex;
     gap: 3rem;
-    justify-content: space-evenly;
-    padding: 1rem 4rem;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem 0 2rem 0rem;
     font-size: 1rem;
 }
 
-:root {
-    --ltblue: #6eddd7;
-    --blue: #3dadd2;
-    --ltred: #e0966f;
-    --red: #e1534f;
-    --ltpurple: #c76fe0; /* Approximate value for adjusted hue */
-    --purple: #4f53e1; /* Approximate value for adjusted hue */
-}
-
-/*body {
-    background-image: linear-gradient(to right top, rgba(110, 221, 215, 0.75), rgba(61, 173, 210, 0.5));
-}*/
-
-a{
-    border: 2px solid black;
-    margin: 0; 
+svg {
     padding: 0;
-    display: flex;
-    height: 20px;
-    width: 20px;
-}
-
-.icon-btn {
-    text-align: center;
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.75);
-    display: inline-block;
-    text-decoration: none;
-    width: 1em;
-    height: 1em;
-    padding: 0.5em 0;
-    border-radius: 100%;
-    position: relative;
-    text-shadow: 0 0.025em 0.025em rgba(0, 0, 0, 0.2);
-    border: 0.025em solid rgba(0, 0, 0, 0.05);
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    background-origin: border-box;
-    transition: background-position 0.1s linear;
-}
-
-.icon-blue {
-    background-color: var(--blue);
-/*    background-image: linear-gradient(to bottom, var(--ltblue), var(--blue));
-*/}
-
-.icon-red {
-    background-color: var(--red);
-    background-image: linear-gradient(to bottom, var(--ltred), var(--red));
-}
-
-.icon-purple {
-    background-color: var(--purple);
-    background-image: linear-gradient(to bottom, var(--ltpurple), var(--purple));
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.1rem;
+    border-radius: 8px;
+    color: black;
 }

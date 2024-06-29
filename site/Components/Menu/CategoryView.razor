@@ -4,10 +4,12 @@
         {
             <li class="item">
                 <strong>@item.Name</strong>: @item.Description
+                <div class="pricelist">
                 @foreach (var price in item.Prices)
                 {
-                    <span class="price">@price.Key: @(price.Value)€</span>
+                    <span class="price">@(price.Value)€</span>
                 }
+                </div>
             </li>
         }
     </ul>

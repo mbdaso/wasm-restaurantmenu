@@ -1,25 +1,25 @@
 ﻿@page "/menu"
 @inject HttpClient Http
+<div class="main">
+    <header class="title">Menu</header>
+    <div class="menu">
+        @foreach (var category in menu?.Categories ?? Enumerable.Empty<Category>())
+        {
+            <div class="category">
+                <header>
+                    <h1 class="title">@category.Name</h1>
+                </header>
 
-<header>Menu</header>
-<div class="menu">
-    @foreach (var category in menu?.Categories ?? Enumerable.Empty<Category>())
-    {
-        <div class="category">
-            <header>
-
-                <h1>@category.Name</h1>
-                <span class="pricecategories">
+                <div class="pricecategories">
                     @foreach (var priceCategory in category.PriceCategories)
                     {
-                        <h2>@priceCategory</h2>
+                        <h2 class="title">@priceCategory</h2>
                     }
-                </span>
-            </header>
-
-            <CategoryView Category=@category />
-        </div>
-    }
+                </div>
+                <CategoryView Category=@category />
+            </div>
+        }
+    </div>
 </div>
 @code {
     private Menu? menu = MenuContent.Create();

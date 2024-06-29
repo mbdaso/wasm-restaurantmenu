@@ -1,17 +1,21 @@
+.main{
+    margin-top: 8rem;
+}
 .menu {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     height: auto; /* Adjust height as needed */
     max-width: 100%;
-    padding: 3rem;
+    padding: 0rem 3rem;
+    margin-top: 4rem;
 }
 
 .category {
     flex: 1 1 30rem; /* Adjust the base width as needed */
     height: auto; /* Let the height adjust based on content */
     background: var(--pico-color-pumpkin-350);
-    padding: 1rem;
+    padding: 1rem;    
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -19,27 +23,30 @@
 }
 
     .category header {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
-        font-family: 'Dancing Script';
         color: ghostwhite;
         text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
         
     }
 
     header{
-        font-family: 'Dancing Script';
         font-size: 4.5rem;
         font-weight: 700;
         display: flex;
         justify-content: center;
     }
 
+.title {
+    font-family: 'Dancing Script';
+}
+
     h1, h2, h3, h4{
 /*        font-size: inherit;
 */        font-family: inherit;
         color: inherit;
+        font-size: inherit;
         margin: 0;
         padding: 0;
     }
@@ -48,6 +55,8 @@
     .pricecategories{
         color: var(--pico-color-pumpkin-100);
         display: flex;
-        gap: 1rem; 
+        gap: 2rem; 
         justify-content: flex-end;
+        font-size: 1.5rem;
+        margin: 1rem;
     }

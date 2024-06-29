@@ -57,13 +57,15 @@ namespace site.Components.Menu
     },
     {
       ""name"": ""Perritos Calientes"",
-      ""priceCategories"": [ ""normal"", ""frito"", ""mechado"" ],
+      ""priceCategories"": [ ""normal"", ""pollo"", ""mechada"" ],
       ""items"": [
         {
           ""name"": ""Normal"",
           ""description"": ""Salchicha, cebolla y 3 salsas"",
           ""prices"": {
-            ""normal"": ""2.50""
+            ""normal"": ""2.50"",
+            ""frito"": ""2.50"",
+            ""mechado"": ""2.50""
           }
         },
         {
