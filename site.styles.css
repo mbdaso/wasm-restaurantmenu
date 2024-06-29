@@ -1,0 +1,140 @@
+/* /Components/Contact.razor.rz.scp.css */
+/* /Components/Footer.razor.rz.scp.css */
+
+footer[b-dic3wf7lzy]{
+    margin-top: 15rem;
+}
+.social-links[b-dic3wf7lzy] {
+    background: var(--pico-color-pumpkin-150);
+    min-height: 4rem;
+    margin: 0;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem 0 2rem 0rem;
+    font-size: 1rem;
+}
+
+svg[b-dic3wf7lzy] {
+    padding: 0;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.1rem;
+    border-radius: 8px;
+    color: black;
+}
+/* /Components/Menu/CategoryView.razor.rz.scp.css */
+ul[b-rpj53h0lfg]{
+    color: inherit;
+    font-size: 0.8rem;
+}
+
+li[b-rpj53h0lfg]{
+    list-style: none;
+    display: flex;    
+}
+
+.pricelist[b-rpj53h0lfg]{
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    border-bottom: 2px dashed var(--pico-color-pumpkin-250);
+}
+/* /Components/Menu/MenuView.razor.rz.scp.css */
+.main[b-n74f78crkj]{
+    margin-top: 8rem;
+}
+.menu[b-n74f78crkj] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: auto; /* Adjust height as needed */
+    max-width: 100%;
+    padding: 0rem 3rem;
+    margin-top: 4rem;
+}
+
+.category[b-n74f78crkj] {
+    flex: 1 1 30rem; /* Adjust the base width as needed */
+    height: auto; /* Let the height adjust based on content */
+    background: var(--pico-color-pumpkin-350);
+    padding: 1rem;    
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: var(--pico-color-pumpkin-50)
+}
+
+    .category header[b-n74f78crkj] {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: ghostwhite;
+        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+        
+    }
+
+    header[b-n74f78crkj]{
+        font-size: 4.5rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+    }
+
+.title[b-n74f78crkj] {
+    font-family: 'Dancing Script';
+}
+
+    h1[b-n74f78crkj], h2[b-n74f78crkj], h3[b-n74f78crkj], h4[b-n74f78crkj]{
+/*        font-size: inherit;
+*/        font-family: inherit;
+        color: inherit;
+        font-size: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .pricecategories[b-n74f78crkj]{
+        color: var(--pico-color-pumpkin-100);
+        display: flex;
+        gap: 2rem; 
+        justify-content: flex-end;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+/* /Components/NavMenu.razor.rz.scp.css */
+.navbar[b-86qr0pun0t] {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    /*background: rgb(245,181,68);
+    background: linear-gradient(270deg, rgba(245,181,68,1) 0%, rgba(255,124,0,1) 42%, rgba(201,98,0,1) 100%);
+    color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;*/  
+}
+.navbar i[b-86qr0pun0t] {
+    margin-right: 1rem;
+    font-size: 3.5rem;
+}
+
+h1[b-86qr0pun0t]{
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+ul[b-86qr0pun0t]{ 
+    color: inherit;
+    display: flex;
+    gap: 1rem;
+}
+li[b-86qr0pun0t]{
+    padding: 0;
+}
+a[b-86qr0pun0t]{
+    color: inherit;
+}
