@@ -15,11 +15,12 @@
     flex: 1 1 30rem; /* Adjust the base width as needed */
     height: auto; /* Let the height adjust based on content */
     background: var(--pico-color-pumpkin-350);
-    padding: 1rem;    
+    padding: 1rem;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    color: var(--pico-color-pumpkin-50)
+    color: var(--pico-color-pumpkin-50);
+    backdrop-filter: blur(2px);
 }
 
     .category header {

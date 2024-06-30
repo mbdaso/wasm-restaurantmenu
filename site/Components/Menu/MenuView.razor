@@ -5,6 +5,10 @@
     <div class="menu">
         @foreach (var category in menu?.Categories ?? Enumerable.Empty<Category>())
         {
+            if (category.Name.ToLower().Trim() == "zumos, batidos y milkshakes")
+            {
+                continue;
+            }
             <div class="category">
                 <header>
                     <h1 class="title">@category.Name</h1>
@@ -21,7 +25,30 @@
         }
     </div>
 </div>
+<div class="main">
+    <header class="title">Bebidas</header>
+    <div class="menu">
+        <div class="category">
+            <header>
+                <h1 class="title">@drinks?.Name</h1>
+            </header>
+
+            <div class="pricecategories">
+                @foreach (var priceCategory in drinks?.PriceCategories ?? Enumerable.Empty<string>())
+                {
+                    <h2 class="title">@priceCategory</h2>
+                }
+            </div>
+            @if (drinks is not null)
+            {
+                <CategoryView Category=@drinks />
+            }
+        </div>
+    </div>
+</div>
 @code {
     private Menu? menu = MenuContent.Create();
+
+    private Category? drinks => menu?.Categories.FirstOrDefault(x => x.Name.ToLower().Trim() == "zumos, batidos y milkshakes");
 
 }
