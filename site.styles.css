@@ -61,11 +61,12 @@ li[b-rpj53h0lfg]{
     flex: 1 1 30rem; /* Adjust the base width as needed */
     height: auto; /* Let the height adjust based on content */
     background: var(--pico-color-pumpkin-350);
-    padding: 1rem;    
+    padding: 1rem;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    color: var(--pico-color-pumpkin-50)
+    color: var(--pico-color-pumpkin-50);
+    backdrop-filter: blur(2px);
 }
 
     .category header[b-n74f78crkj] {
@@ -109,32 +110,62 @@ li[b-rpj53h0lfg]{
 /* /Components/NavMenu.razor.rz.scp.css */
 .navbar[b-86qr0pun0t] {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
-    /*background: rgb(245,181,68);
-    background: linear-gradient(270deg, rgba(245,181,68,1) 0%, rgba(255,124,0,1) 42%, rgba(201,98,0,1) 100%);
-    color: white;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;*/  
-}
-.navbar i[b-86qr0pun0t] {
-    margin-right: 1rem;
-    font-size: 3.5rem;
-}
-
-h1[b-86qr0pun0t]{
-    padding: 0;
-    margin: 0;
-    color: inherit;
+    background-color: transparent;
+    padding: 1em 2em;
+    color: var(--color-pico-pumpkin-850);
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    position: relative; /* Make navbar a containing block for the dropdown */
 }
 
-ul[b-86qr0pun0t]{ 
-    color: inherit;
+.navbar-brand[b-86qr0pun0t] {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    font-size: 1.5em;
 }
-li[b-86qr0pun0t]{
-    padding: 0;
-}
-a[b-86qr0pun0t]{
+
+    .navbar-brand i[b-86qr0pun0t] {
+        margin-right: 0.5em;
+    }
+
+.navbar-toggler[b-86qr0pun0t] {
+    background: none;
+    border: none;
     color: inherit;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: none; /* Disable the default focus outline */
 }
+
+    .navbar-toggler:focus[b-86qr0pun0t] {
+        outline: none; /* Ensure no outline on focus */
+    }
+
+.navbar-dropdown[b-86qr0pun0t] {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(68, 68, 68, 0.7); /* Semi-transparent background */
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure dropdown appears above other content */
+    text-align: center; /* Center align text */
+    backdrop-filter: blur(4px); /* Apply blur effect */
+}
+
+    .navbar-dropdown a[b-86qr0pun0t] {
+        display: block;
+        padding: 1.5em 0; /* Add vertical padding */
+        color: white;
+        text-decoration: none;
+        font-size: 1.25em; /* Make text bigger */
+    }
+
+        .navbar-dropdown a:hover[b-86qr0pun0t] {
+            background-color: #555;
+        }
