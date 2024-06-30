@@ -110,33 +110,35 @@ li[b-rpj53h0lfg]{
 /* /Components/NavMenu.razor.rz.scp.css */
 .navbar[b-86qr0pun0t] {
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    padding: 1em 2em;
+    padding: 1rem 4rem;
     color: var(--color-pico-pumpkin-850);
     font-family: sans-serif;
     font-weight: 900;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+    font-size: 3rem;
+    letter-spacing: -2px;
     position: relative; /* Make navbar a containing block for the dropdown */
 }
 
 .navbar-brand[b-86qr0pun0t] {
     display: flex;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
-    .navbar-brand i[b-86qr0pun0t] {
-        margin-right: 0.5em;
-    }
+.navbar-brand i[b-86qr0pun0t] {
+    margin-right: 0.5em;
+    font-size: 8rem;
+}
 
 .navbar-toggler[b-86qr0pun0t] {
     background: none;
     border: none;
     color: inherit;
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
     outline: none; /* Disable the default focus outline */
 }
@@ -151,21 +153,22 @@ li[b-rpj53h0lfg]{
     left: 0;
     right: 0;
     background-color: rgba(68, 68, 68, 0.7); /* Semi-transparent background */
-    padding: 1em;
+    padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000; /* Ensure dropdown appears above other content */
     text-align: center; /* Center align text */
     backdrop-filter: blur(4px); /* Apply blur effect */
+    font-size: 2rem;
 }
 
-    .navbar-dropdown a[b-86qr0pun0t] {
-        display: block;
-        padding: 1.5em 0; /* Add vertical padding */
-        color: white;
-        text-decoration: none;
-        font-size: 1.25em; /* Make text bigger */
-    }
+.navbar-dropdown a[b-86qr0pun0t] {
+    display: block;
+    padding: 1.5em 0; /* Add vertical padding */
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em; /* Make text bigger */
+}
 
-        .navbar-dropdown a:hover[b-86qr0pun0t] {
-            background-color: #555;
-        }
+.navbar-dropdown a:hover[b-86qr0pun0t] {
+    background-color: #555;
+}
