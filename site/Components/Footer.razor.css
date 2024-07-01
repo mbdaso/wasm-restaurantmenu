@@ -3,7 +3,8 @@ footer{
     margin-top: 15rem;
 }
 .social-links {
-    background: var(--pico-color-pumpkin-150);
+    /*background: var(--pico-color-pumpkin-850);*/
+    background: #0c0c0c;
     min-height: 4rem;
     margin: 0;
     display: flex;

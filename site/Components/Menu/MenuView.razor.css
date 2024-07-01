@@ -4,7 +4,7 @@
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 2rem;
     height: auto; /* Adjust height as needed */
     max-width: 100%;
     padding: 0rem 3rem;
@@ -14,26 +14,28 @@
 .category {
     flex: 1 1 30rem; /* Adjust the base width as needed */
     height: auto; /* Let the height adjust based on content */
-    background: var(--pico-color-pumpkin-350);
+    background: rgba(46, 138, 138, 0.62);
+    /*background: var(--pico-color-pumpkin-350);*/
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     color: var(--pico-color-pumpkin-50);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
 }
 
     .category header {
-        font-size: 2.5rem;
+        font-size: 5rem;
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: ghostwhite;
         text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+        text-align: center;
         
     }
 
     header{
-        font-size: 4.5rem;
+        font-size: 10rem;
         font-weight: 700;
         display: flex;
         justify-content: center;
@@ -58,6 +60,6 @@
         display: flex;
         gap: 2rem; 
         justify-content: flex-end;
-        font-size: 1.5rem;
+        font-size: 3rem;
         margin: 1rem;
     }

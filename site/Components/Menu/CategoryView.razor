@@ -1,18 +1,16 @@
 ﻿<div class="list">
-    <ul>
         @foreach (var item in this.Category.Items)
         {
-            <li class="item">
+            <div class="item">
                 <strong>@item.Name</strong>: @item.Description
-                <div class="pricelist">
+                @* <div class="pricelist">
                 @foreach (var price in item.Prices)
                 {
                     <span class="price">@(price.Value)€</span>
                 }
-                </div>
-            </li>
+                </div> *@
+            </div>
         }
-    </ul>
 </div>
 
 @code {

@@ -14,12 +14,12 @@
                     <h1 class="title">@category.Name</h1>
                 </header>
 
-                <div class="pricecategories">
+                @* <div class="pricecategories">
                     @foreach (var priceCategory in category.PriceCategories)
                     {
                         <h2 class="title">@priceCategory</h2>
                     }
-                </div>
+                </div> *@
                 <CategoryView Category=@category />
             </div>
         }
