@@ -1,4 +1,39 @@
-@import('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+.loading-screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.loader {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 0 2px black, 0 0 1px black, 0 0 1px black;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+    .loader::after {
+        content: 'Loading';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: black;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        animation: animloader111 1s linear infinite;
+    }
+
+@keyframes animloader111 {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 100%
+    }
+}
 
 :root {
     --c-background: var(--pico-color-pumpkin-50);
@@ -49,37 +84,6 @@ body {
 }
 
 
-.loader{
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: black;
-    text-shadow: 0 0 2px black, 0 0 1px black, 0 0 1px black;
-    letter-spacing: 2px;
-    position: relative;
-    
-}
 
-.loader::after {
-    content: 'Loading';
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: black;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    animation: animloader111 1s linear infinite;
-}
-
-@keyframes animloader111 {
-    0% {
-        width: 0%
-    }
-
-    100% {
-        width: 100%
-    }
-}
 
 

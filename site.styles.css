@@ -5,7 +5,8 @@ footer[b-dic3wf7lzy]{
     margin-top: 15rem;
 }
 .social-links[b-dic3wf7lzy] {
-    background: var(--pico-color-pumpkin-150);
+    /*background: var(--pico-color-pumpkin-850);*/
+    background: #0c0c0c;
     min-height: 4rem;
     margin: 0;
     display: flex;
@@ -31,9 +32,15 @@ ul[b-rpj53h0lfg]{
     font-size: 0.8rem;
 }
 
-li[b-rpj53h0lfg]{
+.list[b-rpj53h0lfg]{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.item[b-rpj53h0lfg]{
     list-style: none;
-    display: flex;    
+    font-size: 2rem;
 }
 
 .pricelist[b-rpj53h0lfg]{
@@ -50,7 +57,7 @@ li[b-rpj53h0lfg]{
 .menu[b-n74f78crkj] {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 2rem;
     height: auto; /* Adjust height as needed */
     max-width: 100%;
     padding: 0rem 3rem;
@@ -60,26 +67,28 @@ li[b-rpj53h0lfg]{
 .category[b-n74f78crkj] {
     flex: 1 1 30rem; /* Adjust the base width as needed */
     height: auto; /* Let the height adjust based on content */
-    background: var(--pico-color-pumpkin-350);
+    background: rgba(46, 138, 138, 0.62);
+    /*background: var(--pico-color-pumpkin-350);*/
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     color: var(--pico-color-pumpkin-50);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
 }
 
     .category header[b-n74f78crkj] {
-        font-size: 2.5rem;
+        font-size: 5rem;
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: ghostwhite;
         text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+        text-align: center;
         
     }
 
     header[b-n74f78crkj]{
-        font-size: 4.5rem;
+        font-size: 10rem;
         font-weight: 700;
         display: flex;
         justify-content: center;
@@ -104,7 +113,7 @@ li[b-rpj53h0lfg]{
         display: flex;
         gap: 2rem; 
         justify-content: flex-end;
-        font-size: 1.5rem;
+        font-size: 3rem;
         margin: 1rem;
     }
 /* /Components/NavMenu.razor.rz.scp.css */
