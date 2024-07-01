@@ -20,8 +20,8 @@ footer[b-dic3wf7lzy]{
 svg[b-dic3wf7lzy] {
     padding: 0;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 7rem;
+    height: 7rem;
     padding: 0.1rem;
     border-radius: 8px;
     color: black;
@@ -43,12 +43,20 @@ ul[b-rpj53h0lfg]{
     font-size: 2rem;
 }
 
+.description[b-rpj53h0lfg]{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.description strong[b-rpj53h0lfg]{
+    color: whitesmoke
+}
 .pricelist[b-rpj53h0lfg]{
     flex-grow: 1;
     display: flex;
     gap: 2rem;
-    justify-content: flex-end;
-    border-bottom: 2px dashed var(--pico-color-pumpkin-250);
+    justify-content: flex-end;    
 }
 /* /Components/Menu/MenuView.razor.rz.scp.css */
 .main[b-n74f78crkj]{
@@ -56,19 +64,21 @@ ul[b-rpj53h0lfg]{
 }
 .menu[b-n74f78crkj] {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 2rem;
     height: auto; /* Adjust height as needed */
     max-width: 100%;
-    padding: 0rem 3rem;
+    padding: 0rem 10px;
     margin-top: 4rem;
+    justify-content: stretch;
 }
 
 .category[b-n74f78crkj] {
     flex: 1 1 30rem; /* Adjust the base width as needed */
     height: auto; /* Let the height adjust based on content */
-    /*background: rgba(46, 138, 138, 0.62);*/
-    background: var(--pico-color-pumpkin-350);
+    background: rgba(46, 138, 138, 0.62);
+    /*background: var(--pico-color-pumpkin-350);*/
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 4px;
@@ -115,6 +125,10 @@ ul[b-rpj53h0lfg]{
         justify-content: flex-end;
         font-size: 3rem;
         margin: 1rem;
+    }
+
+    hr[b-n74f78crkj]{
+        border-bottom: 2px solid white;
     }
 /* /Components/NavMenu.razor.rz.scp.css */
 .navbar[b-86qr0pun0t] {
