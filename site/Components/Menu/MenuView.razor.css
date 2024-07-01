@@ -14,8 +14,8 @@
 .category {
     flex: 1 1 30rem; /* Adjust the base width as needed */
     height: auto; /* Let the height adjust based on content */
-    background: rgba(46, 138, 138, 0.62);
-    /*background: var(--pico-color-pumpkin-350);*/
+    /*background: rgba(46, 138, 138, 0.62);*/
+    background: var(--pico-color-pumpkin-350);
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 4px;
