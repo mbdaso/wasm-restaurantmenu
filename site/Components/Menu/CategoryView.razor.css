@@ -14,10 +14,18 @@ ul{
     font-size: 2rem;
 }
 
+.description{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.description strong{
+    color: whitesmoke
+}
 .pricelist{
     flex-grow: 1;
     display: flex;
     gap: 2rem;
-    justify-content: flex-end;
-    border-bottom: 2px dashed var(--pico-color-pumpkin-250);
+    justify-content: flex-end;    
 }
