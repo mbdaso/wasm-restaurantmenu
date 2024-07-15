@@ -1,1 +1,14 @@
-This repository contains a simple static website featuring a restaurant menu, built with Blazor WebAssembly. The site is hosted on GitHub Pages and utilizes GitHub Actions for continuous deployment.
+# 🍽️ Restaurant Menu Website
+
+### Built with Blazor WebAssembly | Hosted on GitHub Pages | Deployed with GitHub Actions
+
+---
+
+## 📖 Description
+
+Welcome to the repository for a **simple static website** featuring a beautifully crafted **restaurant menu**.
+
+- 🌐 **Technology:** Built using [Blazor WebAssembly](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor).
+- 🚀 **Hosting:** Deployed on [GitHub Pages](https://pages.github.com/).
+- ⚙️ **CI/CD:** Automated deployment with [GitHub Actions](https://github.com/features/actions).
+- 🖥️ **Demo**: [https://www.martinbelda.dev/wasm-restaurantmenu](https://www.martinbelda.dev/wasm-restaurantmenu).
